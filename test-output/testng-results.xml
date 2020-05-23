@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33470" started-at="2020-05-23T18:12:34 IST" finished-at="2020-05-23T18:13:07 IST">
+  <suite name="Default suite" duration-ms="42955" started-at="2020-05-23T18:47:53 IST" finished-at="2020-05-23T18:48:36 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33470" started-at="2020-05-23T18:12:34 IST" finished-at="2020-05-23T18:13:07 IST">
+    <test name="Default test" duration-ms="42955" started-at="2020-05-23T18:47:53 IST" finished-at="2020-05-23T18:48:36 IST">
       <class name="coms.test.T_Mobile">
-        <test-method status="PASS" signature="setup()[pri:1, instance:coms.test.T_Mobile@5f3a4b84]" name="setup" duration-ms="25293" started-at="2020-05-23T18:12:34 IST" finished-at="2020-05-23T18:12:59 IST">
+        <test-method status="PASS" signature="setup()[pri:1, instance:coms.test.T_Mobile@5f3a4b84]" name="setup" duration-ms="35843" started-at="2020-05-23T18:47:53 IST" finished-at="2020-05-23T18:48:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="header()[pri:2, instance:coms.test.T_Mobile@5f3a4b84]" name="header" duration-ms="650" started-at="2020-05-23T18:12:59 IST" finished-at="2020-05-23T18:13:00 IST">
+        <test-method status="PASS" signature="header()[pri:2, instance:coms.test.T_Mobile@5f3a4b84]" name="header" duration-ms="479" started-at="2020-05-23T18:48:29 IST" finished-at="2020-05-23T18:48:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- header -->
-        <test-method status="PASS" signature="footer()[pri:3, instance:coms.test.T_Mobile@5f3a4b84]" name="footer" duration-ms="6629" started-at="2020-05-23T18:13:00 IST" finished-at="2020-05-23T18:13:06 IST">
+        <test-method status="PASS" signature="footer()[pri:3, instance:coms.test.T_Mobile@5f3a4b84]" name="footer" duration-ms="5656" started-at="2020-05-23T18:48:29 IST" finished-at="2020-05-23T18:48:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- footer -->
-        <test-method status="PASS" signature="plan()[pri:4, instance:coms.test.T_Mobile@5f3a4b84]" name="plan" duration-ms="249" started-at="2020-05-23T18:13:06 IST" finished-at="2020-05-23T18:13:07 IST">
+        <test-method status="PASS" signature="plan()[pri:4, instance:coms.test.T_Mobile@5f3a4b84]" name="plan" duration-ms="189" started-at="2020-05-23T18:48:35 IST" finished-at="2020-05-23T18:48:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- plan -->
-        <test-method status="PASS" signature="coverage()[pri:6, instance:coms.test.T_Mobile@5f3a4b84]" name="coverage" duration-ms="217" started-at="2020-05-23T18:13:07 IST" finished-at="2020-05-23T18:13:07 IST">
+        <test-method status="PASS" signature="coverage()[pri:6, instance:coms.test.T_Mobile@5f3a4b84]" name="coverage" duration-ms="187" started-at="2020-05-23T18:48:35 IST" finished-at="2020-05-23T18:48:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- coverage -->
-        <test-method status="PASS" signature="Devices()[pri:7, instance:coms.test.T_Mobile@5f3a4b84]" name="Devices" duration-ms="184" started-at="2020-05-23T18:13:07 IST" finished-at="2020-05-23T18:13:07 IST">
+        <test-method status="PASS" signature="Devices()[pri:7, instance:coms.test.T_Mobile@5f3a4b84]" name="Devices" duration-ms="260" started-at="2020-05-23T18:48:35 IST" finished-at="2020-05-23T18:48:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Devices -->
-        <test-method status="PASS" signature="BusinessSolution()[pri:8, instance:coms.test.T_Mobile@5f3a4b84]" name="BusinessSolution" duration-ms="207" started-at="2020-05-23T18:13:07 IST" finished-at="2020-05-23T18:13:07 IST">
+        <test-method status="PASS" signature="BusinessSolution()[pri:8, instance:coms.test.T_Mobile@5f3a4b84]" name="BusinessSolution" duration-ms="287" started-at="2020-05-23T18:48:35 IST" finished-at="2020-05-23T18:48:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BusinessSolution -->
