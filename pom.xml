@@ -130,6 +130,15 @@
 					</suiteXmlFiles>
           
         </configuration>
+        
+        <executions>
+          <execution>
+            <goals>
+              <goal>test-compile</goal>
+            </goals>
+          </execution>
+        </executions>
+        
       </plugin>
     </plugins>
   </build>

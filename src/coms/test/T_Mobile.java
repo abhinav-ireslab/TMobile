@@ -106,7 +106,7 @@ public class T_Mobile extends Base {
 	}
 	
 	@Test(priority = 8)
-	public void BusinessSolutions() {
+	public void BusinessSolution() {
 
 		WebElement coverage = driver.findElement(By.xpath(
 				"/html/body/tfb-activation-root/tfb-header/div/header/div[1]/div[1]/div/div[2]/div[2]/ul/li[4]/button"));
