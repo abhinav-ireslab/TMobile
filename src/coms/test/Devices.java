@@ -22,7 +22,7 @@ public class Devices extends Base {
 		Devices.click();
 		
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output\\index.html"+System.currentTimeMillis()+".png"));
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output"+System.currentTimeMillis()+".png"));
 
 	}
 
@@ -43,7 +43,7 @@ public class Devices extends Base {
 		System.out.println(Colour + " Colour is Ok");
 		
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output\\index.html"+System.currentTimeMillis()+".png"));
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output"+System.currentTimeMillis()+".png"));
 
 	}
 
@@ -55,7 +55,7 @@ public class Devices extends Base {
 		Assert.assertEquals(Price, expected);
 		System.out.println(Price + " Price is Ok");
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output\\index.html"+System.currentTimeMillis()+".png"));
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output"+System.currentTimeMillis()+".png"));
 
 	}
 
@@ -83,7 +83,7 @@ public class Devices extends Base {
 		System.out.println(Price + " Price is Ok");
 		
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output\\index.html"+System.currentTimeMillis()+".png"));
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output"+System.currentTimeMillis()+".png"));
 
 	}
 
@@ -106,7 +106,7 @@ public class Devices extends Base {
 		Assert.assertEquals(list1, text);
 		
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output\\index.html"+System.currentTimeMillis()+".png"));
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output"+System.currentTimeMillis()+".png"));
 
 	}
 
@@ -150,14 +150,14 @@ public class Devices extends Base {
 				.click();
 		
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output\\index.html"+System.currentTimeMillis()+".png"));
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output"+System.currentTimeMillis()+".png"));
 
 		}
 		catch(Exception e){
 			System.out.println("Captcha");
 			
 			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output\\index.html"+System.currentTimeMillis()+".png"));
+			FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output"+System.currentTimeMillis()+".png"));
 		}
 	}
 
