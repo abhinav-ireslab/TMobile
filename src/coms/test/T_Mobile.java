@@ -1,10 +1,15 @@
 package coms.test;
 
+
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
+import org.apache.maven.surefire.shade.org.apache.maven.shared.utils.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,7 +20,7 @@ public class T_Mobile extends Base {
 	
 
 	@Test(priority = 2)
-	public static void header() {
+	public static void header() throws IOException {
 		int HeaderElement = driver.findElements(By.xpath("//div[@class='header-navigation__bar']//div")).size();
 
 		try {
@@ -25,10 +30,15 @@ public class T_Mobile extends Base {
 				List<WebElement> header = driver.findElements(By.xpath("//div[@class='header-navigation__bar']//div"));
 				WebElement headerlist = header.get(j);
 				System.out.println("Header Element: " + headerlist.getText());
+				File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+				FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
 
+								
 			}
 		} catch (Exception e) {
 			System.out.println(" Not Execute");
+			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
 
 		}
 	}
@@ -49,6 +59,8 @@ public class T_Mobile extends Base {
 				WebElement list = ele.get(i);
 				// list.click();
 				System.out.println("Print footer Element: " + list.getText());
+				File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+				FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
 
 			}
 		} catch (Exception e) {
@@ -57,7 +69,7 @@ public class T_Mobile extends Base {
 	}
 
 	@Test(priority = 4)
-	public void plan() {
+	public void plan() throws IOException {
 
 		WebElement plans = driver.findElement(By.xpath(
 				"/html/body/tfb-activation-root/tfb-header/div/header/div[1]/div[1]/div/div[2]/div[2]/ul/li[1]/button"));
@@ -66,13 +78,16 @@ public class T_Mobile extends Base {
 
 			plans.click();
 			System.out.println("Plans avalable and click successfully");
+			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
+
 		} else {
 			System.out.println("Plans not available");
 		}
 	}
 
 	@Test(priority = 6)
-	public void coverage() {
+	public void coverage() throws IOException {
 
 		WebElement coverage = driver.findElement(By.xpath(
 				"/html/body/tfb-activation-root/tfb-header/div/header/div[1]/div[1]/div/div[2]/div[2]/ul/li[2]/button"));
@@ -82,6 +97,9 @@ public class T_Mobile extends Base {
 			coverage.click();
 			System.out.println("Coverage available and click successfully");
 
+			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
+
 		} else {
 
 			System.out.println("Coverage not available");
@@ -89,7 +107,7 @@ public class T_Mobile extends Base {
 	}
 
 	@Test(priority = 7)
-	public void Devices() {
+	public void Devices() throws IOException {
 
 		WebElement coverage = driver.findElement(By.xpath(
 				"/html/body/tfb-activation-root/tfb-header/div/header/div[1]/div[1]/div/div[2]/div[2]/ul/li[3]/button"));
@@ -99,6 +117,9 @@ public class T_Mobile extends Base {
 			coverage.click();
 			System.out.println("Devices available and click successfully");
 
+			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
+
 		} else {
 
 			System.out.println("Devices not available");
@@ -106,7 +127,7 @@ public class T_Mobile extends Base {
 	}
 	
 	@Test(priority = 8)
-	public void BusinessSolution() {
+	public void BusinessSolution() throws IOException {
 
 		WebElement coverage = driver.findElement(By.xpath(
 				"/html/body/tfb-activation-root/tfb-header/div/header/div[1]/div[1]/div/div[2]/div[2]/ul/li[4]/button"));
@@ -115,6 +136,9 @@ public class T_Mobile extends Base {
 
 			coverage.click();
 			System.out.println("Business Solution available and click successfully");
+
+			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
 
 		} else {
 

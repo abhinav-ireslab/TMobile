@@ -18,5 +18,14 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/E2E/Downloads/testng-7.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/E2E/.m2/repository/net/sourceforge/jexcelapi/jxl/2.6/jxl-2.6.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="net.sourceforge.jexcelapi"/>
+			<attribute name="maven.artifactId" value="jxl"/>
+			<attribute name="maven.version" value="2.6"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

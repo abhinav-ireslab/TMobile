@@ -1,6 +1,12 @@
 package coms.test;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -8,17 +14,20 @@ import org.testng.annotations.Test;
 public class Devices extends Base {
 
 	@Test(priority = 9)
-	public static void devices() throws InterruptedException {
+	public static void devices() throws InterruptedException, IOException {
 		Thread.sleep(5000);
 		WebElement Devices = driver.findElement(By.xpath(
 				"/html/body/tfb-activation-root/div[1]/div/section/div[2]/tfb-product-list/tfb-product-grid/div/tfb-virtual-scroller/div/div/div/div/span[1]/a"));
 
 		Devices.click();
+		
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
 
 	}
 
 	@Test(priority = 10)
-	public void SelctedColour() {
+	public void SelctedColour() throws IOException {
 
 		WebElement Glow = driver.findElement(By.xpath(
 				"/html/body/tfb-activation-root/div[1]/div/section/div/tfb-product-detail/div/section/section[2]/tfb-product-sku-picker/div[2]/div/div[2]/span[2]/div/button"));
@@ -32,20 +41,26 @@ public class Devices extends Base {
 
 		Assert.assertEquals(Colour, expected);
 		System.out.println(Colour + " Colour is Ok");
+		
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
+
 	}
 
 	@Test(priority = 11)
-	public void price() {
+	public void price() throws IOException {
 
 		String Price = driver.findElement(By.xpath("//div//span[contains(@class, 'device-price')]")).getText();
 		String expected = "$1,399.99";
 		Assert.assertEquals(Price, expected);
 		System.out.println(Price + " Price is Ok");
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
 
 	}
 
 	@Test(priority = 12)
-	public void memory() throws InterruptedException {
+	public void memory() throws InterruptedException, IOException {
 
 		WebElement Clr = driver.findElement(By.xpath(
 				"/html/body/tfb-activation-root/div[1]/div/section/div/tfb-product-detail/div/section/section[2]/tfb-product-sku-picker/div[2]/div/div[2]/span[1]/div/button"));
@@ -66,10 +81,14 @@ public class Devices extends Base {
 		Assert.assertEquals(Price, expecteds);
 		System.out.println(Price);
 		System.out.println(Price + " Price is Ok");
+		
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
+
 	}
 
 	@Test(priority = 13)
-	public void feature() {
+	public void feature() throws IOException {
 
 		driver.findElement(By.xpath(
 				"/html/body/tfb-activation-root/div[1]/div/section/div/tfb-product-detail/div/section/section[2]/tfb-product-title/div/div/a"))
@@ -85,10 +104,14 @@ public class Devices extends Base {
 		String text = "Ultra Bright Night";
 
 		Assert.assertEquals(list1, text);
+		
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
+
 	}
 
 	@Test(priority = 14)
-	public void ContactUs() throws InterruptedException {
+	public void ContactUs() throws InterruptedException, IOException {
 
 		try {
 		driver.findElement(By.xpath(
@@ -125,9 +148,17 @@ public class Devices extends Base {
 		driver.findElement(By.xpath(
 				"/html/body/tfb-activation-root/tfb-header/div/div/div/div/div/div[2]/div/div[2]/form/div[6]/button"))
 				.click();
+		
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
+
 		}
 		catch(Exception e){
 			System.out.println("Captcha");
+			
+			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
+
 		}
 	}
 
