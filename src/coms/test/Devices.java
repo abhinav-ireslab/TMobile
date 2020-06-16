@@ -20,9 +20,8 @@ public class Devices extends Base {
 				"/html/body/tfb-activation-root/div[1]/div/section/div[2]/tfb-product-list/tfb-product-grid/div/tfb-virtual-scroller/div/div/div/div/span[1]/a"));
 
 		Devices.click();
-		
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output"+System.currentTimeMillis()+".png"));
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
 
 	}
 
@@ -43,7 +42,7 @@ public class Devices extends Base {
 		System.out.println(Colour + " Colour is Ok");
 		
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output"+System.currentTimeMillis()+".png"));
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
 
 	}
 
@@ -54,8 +53,9 @@ public class Devices extends Base {
 		String expected = "$1,399.99";
 		Assert.assertEquals(Price, expected);
 		System.out.println(Price + " Price is Ok");
+
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output"+System.currentTimeMillis()+".png"));
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
 
 	}
 
@@ -83,7 +83,7 @@ public class Devices extends Base {
 		System.out.println(Price + " Price is Ok");
 		
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output"+System.currentTimeMillis()+".png"));
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
 
 	}
 
@@ -106,7 +106,7 @@ public class Devices extends Base {
 		Assert.assertEquals(list1, text);
 		
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output"+System.currentTimeMillis()+".png"));
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
 
 	}
 
@@ -150,14 +150,15 @@ public class Devices extends Base {
 				.click();
 		
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output"+System.currentTimeMillis()+".png"));
+		FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
 
 		}
 		catch(Exception e){
 			System.out.println("Captcha");
 			
 			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\test-output"+System.currentTimeMillis()+".png"));
+			FileUtils.copyFile(scrFile, new File("C:\\Users\\E2E\\eclipse-workspace\\TMobile\\images\\"+System.currentTimeMillis()+".png"));
+
 		}
 	}
 

@@ -4,7 +4,6 @@ package coms.test;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 import org.apache.maven.surefire.shade.org.apache.maven.shared.utils.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -12,7 +11,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class T_Mobile extends Base {
